@@ -14,6 +14,7 @@
 		840ABB3D22B7E27A001137DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840ABB3B22B7E27A001137DE /* LaunchScreen.storyboard */; };
 		840ABB4822B7E27A001137DE /* SideMenu1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ABB4722B7E27A001137DE /* SideMenu1Tests.swift */; };
 		840ABB5322B7E27A001137DE /* SideMenu1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840ABB5222B7E27A001137DE /* SideMenu1UITests.swift */; };
+		840ABB6422B7E7AE001137DE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840ABB6122B7E409001137DE /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		840ABB4E22B7E27A001137DE /* SideMenu1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideMenu1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840ABB5222B7E27A001137DE /* SideMenu1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu1UITests.swift; sourceTree = "<group>"; };
 		840ABB5422B7E27A001137DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840ABB6022B7E408001137DE /* SideMenu1Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SideMenu1Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		840ABB6122B7E409001137DE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		840ABB6222B7E409001137DE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,9 @@
 				840ABB3922B7E27A001137DE /* Assets.xcassets */,
 				840ABB3B22B7E27A001137DE /* LaunchScreen.storyboard */,
 				840ABB3E22B7E27A001137DE /* Info.plist */,
+				840ABB6222B7E409001137DE /* SWRevealViewController.h */,
+				840ABB6122B7E409001137DE /* SWRevealViewController.m */,
+				840ABB6022B7E408001137DE /* SideMenu1Tests-Bridging-Header.h */,
 			);
 			path = SideMenu1;
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 					};
 					840ABB4222B7E27A001137DE = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 840ABB2E22B7E279001137DE;
 					};
 					840ABB4D22B7E27A001137DE = {
@@ -258,6 +266,7 @@
 			files = (
 				840ABB3522B7E279001137DE /* ViewController.swift in Sources */,
 				840ABB3322B7E279001137DE /* AppDelegate.swift in Sources */,
+				840ABB6422B7E7AE001137DE /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +476,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SideMenu1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -476,6 +486,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = admin.SideMenu1Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SideMenu1Tests/SideMenu1Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideMenu1.app/SideMenu1";
@@ -487,6 +499,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SideMenu1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -496,6 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = admin.SideMenu1Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SideMenu1Tests/SideMenu1Tests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideMenu1.app/SideMenu1";
